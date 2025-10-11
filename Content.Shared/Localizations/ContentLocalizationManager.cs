@@ -67,7 +67,7 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL", FuncDeclentPrepositional);
         }
 
-        private ILocValue DeclentHelper(LocArgs args, string declent = "declentNominative")
+        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative")
         {
             if (args.Args.Count < 1)
             {
@@ -82,8 +82,8 @@ namespace Content.Shared.Localizations
                 // .toml ["captain's carapace"] -> .ftl captain-s-carapace
                 var entityName = Identity.Name(entity, entityManager).ToLower();
                 entityName = string.Concat(entityName.Select(c => char.IsLetter(c) ? c : '-'));
-                var loc = new LocValueString(Loc.GetString($"{entityName}.{declent}"));
-                if (loc.Value.Contains(declent))
+                var loc = new LocValueString(Loc.GetString(entityName, ("case", declent)));
+                if (loc.Value.Contains(entityName))
                 {
                     return args.Args[0];
                 }
@@ -94,32 +94,32 @@ namespace Content.Shared.Localizations
 
         private ILocValue FuncDeclentNominative(LocArgs args)
         {
-            return DeclentHelper(args, "declentNominative");
+            return DeclentHelper(args, "nominative");
         }
 
         private ILocValue FuncDeclentGenitive(LocArgs args)
         {
-            return DeclentHelper(args, "declentGenitive");
+            return DeclentHelper(args, "genitive");
         }
 
         private ILocValue FuncDeclentDative(LocArgs args)
         {
-            return DeclentHelper(args, "declentDative");
+            return DeclentHelper(args, "dative");
         }
 
         private ILocValue FuncDeclentAccusative(LocArgs args)
         {
-            return DeclentHelper(args, "declentAccusative");
+            return DeclentHelper(args, "accusative");
         }
 
         private ILocValue FuncDeclentInstrumental(LocArgs args)
         {
-            return DeclentHelper(args, "declentInstrumental");
+            return DeclentHelper(args, "instrumental");
         }
 
         private ILocValue FuncDeclentPrepositional(LocArgs args)
         {
-            return DeclentHelper(args, "declentPrepositional");
+            return DeclentHelper(args, "prepositional");
         }
 
         private ILocValue FormatMany(LocArgs args)
