@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared.IdentityManagement; // Sierra-Stories EDIT ADD
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Localizations
@@ -10,7 +11,8 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly ILocalizationManager _loc = default!;
 
         // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
+        private const string Culture = "ru-RU"; // Sierra-Stories EDIT ADD Corvax-Localization
+        private const string FallbackCulture = "en-US";  // Sierra-Stories EDIT ADD Corvax-Localization
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -26,8 +28,12 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
+            var fallbackCulture = new CultureInfo(FallbackCulture);  // Sierra-Stories EDIT ADD // Corvax-Localization
 
             _loc.LoadCulture(culture);
+            _loc.LoadCulture(fallbackCulture);  // Sierra-Stories EDIT ADD // Corvax-Localization
+            _loc.SetFallbackCluture(fallbackCulture);  // Sierra-Stories EDIT ADD Corvax-Localization
+            _loc.AddFunction(culture, "MANY", FormatMany);  // Sierra-Stories EDIT ADD Corvax-Localization: To prevent problems in auto-generated locale files
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);
@@ -50,6 +56,70 @@ namespace Content.Shared.Localizations
 
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
+
+            // RU DECLENT
+            var cultureRu = new CultureInfo("ru-RU");
+            _loc.AddFunction(cultureRu, "DECLENT_NOMINATIVE", FuncDeclentNominative);
+            _loc.AddFunction(cultureRu, "DECLENT_GENITIVE", FuncDeclentGenitive);
+            _loc.AddFunction(cultureRu, "DECLENT_DATIVE", FuncDeclentDative);
+            _loc.AddFunction(cultureRu, "DECLENT_ACCUSATIVE", FuncDeclentAccusative);
+            _loc.AddFunction(cultureRu, "DECLENT_INSTRUMENTAL", FuncDeclentInstrumental);
+            _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL", FuncDeclentPrepositional);
+        }
+
+        private ILocValue DeclentHelper(LocArgs args, string declent = "declentNominative")
+        {
+            if (args.Args.Count < 1)
+            {
+                return args.Args[0];
+            }
+
+            ILocValue entity0 = args.Args[0];
+            if (entity0.Value is EntityUid entity)
+            {
+                var entityManager = IoCManager.Resolve<IEntityManager>();
+                // .ftl supports only lowercase letters and - symbol
+                // .toml ["captain's carapace"] -> .ftl captain-s-carapace
+                var entityName = Identity.Name(entity, entityManager).ToLower();
+                entityName = string.Concat(entityName.Select(c => char.IsLetter(c) ? c : '-'));
+                var loc = new LocValueString(Loc.GetString($"{entityName}.{declent}"));
+                if (loc.Value.Contains(declent))
+                {
+                    return args.Args[0];
+                }
+                return loc;
+            }
+            return args.Args[0];
+        }
+
+        private ILocValue FuncDeclentNominative(LocArgs args)
+        {
+            return DeclentHelper(args, "declentNominative");
+        }
+
+        private ILocValue FuncDeclentGenitive(LocArgs args)
+        {
+            return DeclentHelper(args, "declentGenitive");
+        }
+
+        private ILocValue FuncDeclentDative(LocArgs args)
+        {
+            return DeclentHelper(args, "declentDative");
+        }
+
+        private ILocValue FuncDeclentAccusative(LocArgs args)
+        {
+            return DeclentHelper(args, "declentAccusative");
+        }
+
+        private ILocValue FuncDeclentInstrumental(LocArgs args)
+        {
+            return DeclentHelper(args, "declentInstrumental");
+        }
+
+        private ILocValue FuncDeclentPrepositional(LocArgs args)
+        {
+            return DeclentHelper(args, "declentPrepositional");
         }
 
         private ILocValue FormatMany(LocArgs args)
