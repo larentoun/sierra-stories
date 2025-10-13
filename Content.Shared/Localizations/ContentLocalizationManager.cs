@@ -2,6 +2,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Content.Shared.IdentityManagement; // Sierra-Stories EDIT ADD
+using Content.Shared.Stacks;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Localizations
@@ -67,7 +68,7 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL", FuncDeclentPrepositional);
         }
 
-        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative")
+        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative", int amount = 1)
         {
             if (args.Args.Count < 1)
             {
@@ -82,7 +83,20 @@ namespace Content.Shared.Localizations
                 // .toml ["captain's carapace"] -> .ftl captain-s-carapace
                 var entityName = Identity.Name(entity, entityManager).ToLower();
                 entityName = string.Concat(entityName.Select(c => char.IsLetter(c) ? c : '-'));
-                var loc = new LocValueString(Loc.GetString(entityName, ("case", declent)));
+
+                if (entityManager.TryGetComponent<StackComponent>(entity, out var stack))
+                {
+                    amount = stack.Count;
+                }
+
+                // one - 1, 21, 31...
+                var number = (amount % 10 == 1 && amount % 100 != 11) ? "one" :
+                // few - 2, 3, 4, 22, 23, 24...
+                    amount % 10 >= 2 && amount % 10 <= 4 && (amount % 100 < 10 || amount % 100 >= 20) ? "few" :
+                // many - 0, 5-20, 25-30, other...
+                    "many";
+
+                var loc = new LocValueString(Loc.GetString(entityName, ("case", declent), ("number", number)));
                 if (loc.Value.Contains(entityName))
                 {
                     return args.Args[0];
