@@ -1,10 +1,14 @@
 import toml
 import re
 
-def main():
+def main(doWeblate):
     toml_file_path = 'input.toml'
     ftl_file_path_ru = 'output_ru.ftl'
+    if(doWeblate):
+        ftl_file_path_ru = 'output_ru_weblate.ftl'
     ftl_file_path_en = 'output_en.ftl'
+    if(doWeblate):
+        ftl_file_path_en = 'output_en_weblate.ftl'
 
     try:
         with open(toml_file_path, 'r', encoding='utf-8') as f:
@@ -27,7 +31,13 @@ def main():
         # we will use lowercase for letters, uppercase for number string
         ftl_entry_name = value.get('nominative', "")
         ftl_entry_name = re.sub(r'[^a-zA-Z0-9а-яА-Я]', '-', ftl_entry_name).lower()
-        ftl_entry_name = cyrillic_to_latin(ftl_entry_name)
+        if(doWeblate):
+            ftl_entry_name = key
+            ftl_entry_name = re.sub(r'[^a-zA-Z0-9а-яА-Я]', '-', ftl_entry_name).lower()
+        else:
+            ftl_entry_name = value.get('nominative', "")
+            ftl_entry_name = re.sub(r'[^a-zA-Z0-9а-яА-Я]', '-', ftl_entry_name).lower()
+            ftl_entry_name = cyrillic_to_latin(ftl_entry_name)
         ftl_entry_name = re.sub(r'[0]', 'ZERO', ftl_entry_name)
         ftl_entry_name = re.sub(r'[1]', 'ONE', ftl_entry_name)
         ftl_entry_name = re.sub(r'[2]', 'TWO', ftl_entry_name)
@@ -107,4 +117,5 @@ def cyrillic_to_latin(text):
 
     return result
 
-main()
+main(True)
+main(False)
