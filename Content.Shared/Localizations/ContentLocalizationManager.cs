@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Text;
 using Content.Shared.IdentityManagement; // Sierra-Stories EDIT ADD
 using Content.Shared.Stacks;
 using Robust.Shared.Utility;
@@ -87,8 +88,8 @@ namespace Content.Shared.Localizations
                 var entityManager = IoCManager.Resolve<IEntityManager>();
                 // .ftl supports only lowercase letters and - symbol
                 // .toml ["captain's carapace"] -> .ftl captain-s-carapace
-                var entityName = Identity.Name(entity, entityManager).ToLower();
-                entityName = string.Concat(entityName.Select(c => char.IsLetter(c) ? c : '-'));
+                var entityName = Identity.Name(entity, entityManager);
+                entityName = ConvertToFTLKey(entityName);
 
                 if (entityManager.TryGetComponent<StackComponent>(entity, out var stack))
                 {
@@ -118,6 +119,50 @@ namespace Content.Shared.Localizations
             if (!String.IsNullOrEmpty(input))
                 return new LocValueString(input[0].ToString().ToUpper() + input.Substring(1));
             else return new LocValueString("");
+        }
+
+
+        private string ConvertToFTLKey(string entityName)
+        {
+            // .ftl only supports a-zA-Z and -
+            // we will use onle lowercase
+            entityName = entityName.ToLower();
+            entityName = string.Concat(entityName.Select(c => char.IsLetterOrDigit(c) ? c : '-'));
+            entityName = ConvertCyrillicToLatin(entityName);
+            return entityName;
+        }
+
+        private static readonly Dictionary<char, string> CyrillicToLatinMap = new Dictionary<char, string>
+        {
+            {'а', "a"}, {'б', "b"}, {'в', "v"}, {'г', "g"}, {'д', "d"}, {'е', "e"},
+            {'ё', "yo"}, {'ж', "zh"}, {'з', "z"}, {'и', "i"}, {'й', "y"}, {'к', "k"},
+            {'л', "l"}, {'м', "m"}, {'н', "n"}, {'о', "o"}, {'п', "p"}, {'р', "r"},
+            {'с', "s"}, {'т', "t"}, {'у', "u"}, {'ф', "f"}, {'х', "kh"}, {'ц', "ts"},
+            {'ч', "ch"}, {'ш', "sh"}, {'щ', "shch"}, {'ъ', ""}, {'ы', "y"}, {'ь', ""},
+            {'э', "e"}, {'ю', "yu"}, {'я', "ya"},
+        };
+
+        private string ConvertCyrillicToLatin(string checkme)
+        {
+            var input = checkme;
+            if (string.IsNullOrEmpty(input))
+                return checkme;
+
+            var result = new StringBuilder();
+
+            foreach (char c in input)
+            {
+                if (CyrillicToLatinMap.TryGetValue(c, out string? replacement))
+                {
+                    result.Append(replacement);
+                }
+                else
+                {
+                    result.Append(c);
+                }
+            }
+
+            return result.ToString();
         }
 
         private ILocValue FuncDeclentNominative(LocArgs args)

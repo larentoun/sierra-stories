@@ -18,22 +18,26 @@ def main():
 
     ftl_lines_ru = []
     ftl_lines_en = []
+    ftl_keys = []
 
     for key, value in data.items():
         cases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional', 'gender']
 
-        # ftl supports only a-z
-        ftl_entry_name = re.sub(r'[^a-zA-Z0-9]', '-', key).lower()
-        ftl_entry_name = re.sub(r'[0]', 'zero', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[1]', 'one', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[2]', 'two', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[3]', 'three', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[4]', 'four', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[5]', 'five', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[6]', 'six', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[7]', 'seven', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[8]', 'eight', ftl_entry_name)
-        ftl_entry_name = re.sub(r'[9]', 'nine', ftl_entry_name)
+        # .ftl supports only a-zA-Z and -
+        # we will use lowercase for letters, uppercase for number string
+        ftl_entry_name = value.get('nominative', "")
+        ftl_entry_name = re.sub(r'[^a-zA-Z0-9а-яА-Я]', '-', ftl_entry_name).lower()
+        ftl_entry_name = cyrillic_to_latin(ftl_entry_name)
+        ftl_entry_name = re.sub(r'[0]', 'ZERO', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[1]', 'ONE', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[2]', 'TWO', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[3]', 'THREE', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[4]', 'FOUR', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[5]', 'FIVE', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[6]', 'SIX', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[7]', 'SEVEN', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[8]', 'EIGHT', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[9]', 'NINE', ftl_entry_name)
 
         while(ftl_entry_name.startswith('-')):
             ftl_entry_name = ftl_entry_name[1:]
@@ -41,6 +45,12 @@ def main():
         if(ftl_entry_name == ""):
             print(f"Error: Key {key} converts to an empty value!")
             continue
+
+        if(ftl_entry_name in ftl_keys):
+            print(f"Error: Duplicate key {ftl_entry_name} detected! Key: {key}")
+            continue
+
+        ftl_keys.append(ftl_entry_name)
 
         ftl_lines_ru.append(f"{ftl_entry_name} =")
         ftl_lines_ru.append("{ $case ->")
@@ -80,5 +90,21 @@ def main():
         print(f"Successfully converted '{toml_file_path}' to '{ftl_file_path_en}'")
     except IOError as e:
         print(f"Error writing to output FTL file '{ftl_file_path_en}': {e}")
+
+def cyrillic_to_latin(text):
+    cyrillic_to_latin_map = {
+        'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e',
+        'ё': 'yo', 'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'y', 'к': 'k',
+        'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r',
+        'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'kh', 'ц': 'ts',
+        'ч': 'ch', 'ш': 'sh', 'щ': 'shch', 'ъ': '', 'ы': 'y', 'ь': '',
+        'э': 'e', 'ю': 'yu', 'я': 'ya',
+    }
+
+    result = ''.join(
+        cyrillic_to_latin_map.get(char, char) for char in text
+    )
+
+    return result
 
 main()
