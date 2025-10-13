@@ -6924,15 +6924,6 @@ instrumental = "красным колпаком шеф-повара"
 prepositional = "красном колпаке шеф-повара"
 gender = "male"
 
-["красный фартук"]
-nominative = "красный фартук"
-genitive = "красного фартука"
-dative = "красному фартуку"
-accusative = "красный фартук"
-instrumental = "красным фартуком"
-prepositional = "красном фартуке"
-gender = "male"
-
 ["ladle"]
 nominative = "поварёшка"
 genitive = "поварёшки"
@@ -21239,15 +21230,6 @@ instrumental = "военной курткой"
 prepositional = "военной куртке"
 gender = "female"
 
-["накладные усы"]
-nominative = "накладные усы"
-genitive = "накладных усов"
-dative = "накладным усам"
-accusative = "накладные усы"
-instrumental = "накладными усами"
-prepositional = "накладных усах"
-gender = "plural"
-
 ["cyborg visor"]
 nominative = "визор киборга"
 genitive = "визора киборга"
@@ -23969,71 +23951,6 @@ dative = "конструкционному узлу"
 accusative = "конструкционный узел"
 instrumental = "конструкционным узлом"
 prepositional = "конструкционном узле"
-
-# MARK: Pronouns
-["ваш"]
-nominative = "ваш"
-genitive = "вашего"
-dative = "вашему"
-accusative = "ваш"
-instrumental = "вашим"
-prepositional = "вашем"
-
-["ваша"]
-nominative = "ваша"
-genitive = "вашей"
-dative = "вашей"
-accusative = "вашу"
-instrumental = "вашей"
-prepositional = "вашей"
-
-["ваше"]
-nominative = "ваше"
-genitive = "вашего"
-dative = "вашему"
-accusative = "ваше"
-instrumental = "вашим"
-prepositional = "вашем"
-
-["ваши"]
-nominative = "ваши"
-genitive = "ваших"
-dative = "вашим"
-accusative = "ваши"
-instrumental = "вашими"
-prepositional = "ваших"
-
-["свой"]
-nominative = "свой"
-genitive = "своего"
-dative = "своему"
-accusative = "свой"
-instrumental = "своим"
-prepositional = "своём"
-
-["своя"]
-nominative = "своя"
-genitive = "своей"
-dative = "своей"
-accusative = "свою"
-instrumental = "своей"
-prepositional = "своей"
-
-["своё"]
-nominative = "своё"
-genitive = "своего"
-dative = "своему"
-accusative = "своё"
-instrumental = "своим"
-prepositional = "своём"
-
-["свои"]
-nominative = "свои"
-genitive = "своих"
-dative = "своим"
-accusative = "свои"
-instrumental = "своими"
-prepositional = "своих"
 
 # Mark: Directions
 ["north"]

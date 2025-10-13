@@ -22,9 +22,25 @@ def main():
     for key, value in data.items():
         cases = ['nominative', 'genitive', 'dative', 'accusative', 'instrumental', 'prepositional', 'gender']
 
+        # ftl supports only a-z
         ftl_entry_name = re.sub(r'[^a-zA-Z0-9]', '-', key).lower()
-        if ftl_entry_name.startswith('-'):
+        ftl_entry_name = re.sub(r'[0]', 'zero', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[1]', 'one', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[2]', 'two', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[3]', 'three', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[4]', 'four', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[5]', 'five', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[6]', 'six', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[7]', 'seven', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[8]', 'eight', ftl_entry_name)
+        ftl_entry_name = re.sub(r'[9]', 'nine', ftl_entry_name)
+
+        while(ftl_entry_name.startswith('-')):
             ftl_entry_name = ftl_entry_name[1:]
+
+        if(ftl_entry_name == ""):
+            print(f"Error: Key {key} converts to an empty value!")
+            continue
 
         ftl_lines_ru.append(f"{ftl_entry_name} =")
         ftl_lines_ru.append("{ $case ->")

@@ -4974,7 +4974,7 @@ stingbang =
     }
 }
 
-anti-tider-2500-suppression-backpack =
+anti-tider-twofivezerozero-suppression-backpack =
 { $case ->
   *[nominative]
     { $number ->
@@ -10990,7 +10990,7 @@ security-temperature-gun =
     }
 }
 
-x-01-multiphase-energy-gun =
+x-zeroone-multiphase-energy-gun =
 { $case ->
   *[nominative]
     { $number ->
@@ -12982,7 +12982,7 @@ laser-rifle =
     }
 }
 
-wt-550-autorifle =
+wt-fivefivezero-autorifle =
 { $case ->
   *[nominative]
     { $number ->
@@ -13086,7 +13086,7 @@ desert-eagle =
     }
 }
 
-m1911 =
+monenineoneone =
 { $case ->
   *[nominative]
     { $number ->
@@ -13098,7 +13098,7 @@ m1911 =
     }
 }
 
-gold-trimmed-m1911 =
+gold-trimmed-monenineoneone =
 { $case ->
   *[nominative]
     { $number ->
@@ -13110,7 +13110,7 @@ gold-trimmed-m1911 =
     }
 }
 
-m45a5--rowland- =
+mfourfiveafive--rowland- =
 { $case ->
   *[nominative]
     { $number ->
@@ -13402,7 +13402,7 @@ amk-rifle =
     }
 }
 
-sabel-42-carbine =
+sabel-fourtwo-carbine =
 { $case ->
   *[nominative]
     { $number ->
@@ -13434,7 +13434,7 @@ sabel-42-carbine =
     }
 }
 
-amk-462-rifle =
+amk-foursixtwo-rifle =
 { $case ->
   *[nominative]
     { $number ->
@@ -13702,7 +13702,7 @@ tactical-sindano-submachine-gun =
     }
 }
 
-gp-9 =
+gp-nine =
 { $case ->
   *[nominative]
     { $number ->
@@ -14002,7 +14002,7 @@ chef-s-kiss =
     }
 }
 
-ammo-box--10mm---lethal- =
+ammo-box--onezeromm---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14010,7 +14010,7 @@ ammo-box--10mm---lethal- =
     }
 }
 
-ammo-box--10mm- =
+ammo-box--onezeromm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14042,7 +14042,7 @@ ammo-box--10mm- =
     }
 }
 
-ammo-box---45---lethal- =
+ammo-box---fourfive---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14050,7 +14050,7 @@ ammo-box---45---lethal- =
     }
 }
 
-ammo-box---45- =
+ammo-box---fourfive- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14082,7 +14082,7 @@ ammo-box---45- =
     }
 }
 
-ammo-box--9mm---lethal- =
+ammo-box--ninemm---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14090,7 +14090,7 @@ ammo-box--9mm---lethal- =
     }
 }
 
-ammo-box--9mm- =
+ammo-box--ninemm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14122,7 +14122,7 @@ ammo-box--9mm- =
     }
 }
 
-speed-loader---38---lethal- =
+speed-loader---threeeight---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14130,7 +14130,7 @@ speed-loader---38---lethal- =
     }
 }
 
-speed-loader---38- =
+speed-loader---threeeight- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14162,7 +14162,7 @@ speed-loader---38- =
     }
 }
 
-speed-loader---38-trac---less-lethal- =
+speed-loader---threeeight-trac---less-lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14170,7 +14170,7 @@ speed-loader---38-trac---less-lethal- =
     }
 }
 
-speed-loader---38-trac- =
+speed-loader---threeeight-trac- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14202,7 +14202,7 @@ speed-loader---38-trac- =
     }
 }
 
-speed-loader---38-hot-shot---very-lethal- =
+speed-loader---threeeight-hot-shot---very-lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14210,7 +14210,7 @@ speed-loader---38-hot-shot---very-lethal- =
     }
 }
 
-speed-loader---38-hot-shot- =
+speed-loader---threeeight-hot-shot- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14242,7 +14242,7 @@ speed-loader---38-hot-shot- =
     }
 }
 
-speed-loader---38-iceblox---lethal-very-lethal--lizardpeople-- =
+speed-loader---threeeight-iceblox---lethal-very-lethal--lizardpeople-- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14250,7 +14250,7 @@ speed-loader---38-iceblox---lethal-very-lethal--lizardpeople-- =
     }
 }
 
-speed-loader---38-iceblox- =
+speed-loader---threeeight-iceblox- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14282,7 +14282,7 @@ speed-loader---38-iceblox- =
     }
 }
 
-speed-loader---38-rubber---less-lethal- =
+speed-loader---threeeight-rubber---less-lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14290,7 +14290,7 @@ speed-loader---38-rubber---less-lethal- =
     }
 }
 
-speed-loader---38-rubber- =
+speed-loader---threeeight-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14482,7 +14482,7 @@ incendiary-slug =
     }
 }
 
-wt-550-autorifle-magazine--4-6x30mm---lethal- =
+wt-fivefivezero-autorifle-magazine--four-sixxthreezeromm---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14490,7 +14490,7 @@ wt-550-autorifle-magazine--4-6x30mm---lethal- =
     }
 }
 
-wt550-magazine--4-6x30mm- =
+wtfivefivezero-magazine--four-sixxthreezeromm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14522,7 +14522,7 @@ wt550-magazine--4-6x30mm- =
     }
 }
 
-wt-550-autorifle-armour-piercing-magazine--4-6x30mm-ap---lethal- =
+wt-fivefivezero-autorifle-armour-piercing-magazine--four-sixxthreezeromm-ap---lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14530,7 +14530,7 @@ wt-550-autorifle-armour-piercing-magazine--4-6x30mm-ap---lethal- =
     }
 }
 
-wt550-magazine--armour-piercing-4-6x30mm- =
+wtfivefivezero-magazine--armour-piercing-four-sixxthreezeromm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14562,7 +14562,7 @@ wt550-magazine--armour-piercing-4-6x30mm- =
     }
 }
 
-wt-550-autorifle-incendiary-magazine--4-6x30mm-ic---lethal-highly-destructive- =
+wt-fivefivezero-autorifle-incendiary-magazine--four-sixxthreezeromm-ic---lethal-highly-destructive- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14570,7 +14570,7 @@ wt-550-autorifle-incendiary-magazine--4-6x30mm-ic---lethal-highly-destructive- =
     }
 }
 
-wt550-magazine--incendiary-4-6x30mm- =
+wtfivefivezero-magazine--incendiary-four-sixxthreezeromm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14754,7 +14754,7 @@ foam-riot-dart-box--nonlethal- =
     }
 }
 
-357-casing--very-lethal- =
+threefiveseven-casing--very-lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14762,7 +14762,7 @@ foam-riot-dart-box--nonlethal- =
     }
 }
 
-357-bullet-casing =
+threefiveseven-bullet-casing =
 { $case ->
   *[nominative]
     { $number ->
@@ -14794,7 +14794,7 @@ foam-riot-dart-box--nonlethal- =
     }
 }
 
-310-surplus-bullet-casing--very-lethal- =
+threeonezero-surplus-bullet-casing--very-lethal- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14802,7 +14802,7 @@ foam-riot-dart-box--nonlethal- =
     }
 }
 
-310-strilka-surplus-bullet-casing =
+threeonezero-strilka-surplus-bullet-casing =
 { $case ->
   *[nominative]
     { $number ->
@@ -14874,7 +14874,7 @@ ammo-box--foam-darts- =
     }
 }
 
-smg-magazine--9mm-ap- =
+smg-magazine--ninemm-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14906,7 +14906,7 @@ smg-magazine--9mm-ap- =
     }
 }
 
-wt-550-magazine--4-6x30mm- =
+wt-fivefivezero-magazine--four-sixxthreezeromm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -14938,7 +14938,7 @@ wt-550-magazine--4-6x30mm- =
     }
 }
 
-wt-550-magazine--4-6x30mm-ap- =
+wt-fivefivezero-magazine--four-sixxthreezeromm-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15098,7 +15098,7 @@ box-of-breaching-shotgun-shells =
     }
 }
 
-smg-magazine--9mm- =
+smg-magazine--ninemm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15130,7 +15130,7 @@ smg-magazine--9mm- =
     }
 }
 
-handgun-magazine---50-ae- =
+handgun-magazine---fivezero-ae- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15162,7 +15162,7 @@ handgun-magazine---50-ae- =
     }
 }
 
-handgun-magazine---45- =
+handgun-magazine---fourfive- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15194,7 +15194,7 @@ handgun-magazine---45- =
     }
 }
 
-specialized-magazine---75- =
+specialized-magazine---sevenfive- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15226,7 +15226,7 @@ specialized-magazine---75- =
     }
 }
 
-pistol-magazine---35-sol-short- =
+pistol-magazine---threefive-sol-short- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15258,7 +15258,7 @@ pistol-magazine---35-sol-short- =
     }
 }
 
-extended-pistol-magazine---35-sol-short- =
+extended-pistol-magazine---threefive-sol-short- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15290,7 +15290,7 @@ extended-pistol-magazine---35-sol-short- =
     }
 }
 
-pistol-magazine---35-sol-short-rubber- =
+pistol-magazine---threefive-sol-short-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15322,7 +15322,7 @@ pistol-magazine---35-sol-short-rubber- =
     }
 }
 
-extended-pistol-magazine---35-sol-short-rubber- =
+extended-pistol-magazine---threefive-sol-short-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15354,7 +15354,7 @@ extended-pistol-magazine---35-sol-short-rubber- =
     }
 }
 
-pistol-magazine---35-sol-short-ap- =
+pistol-magazine---threefive-sol-short-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15386,7 +15386,7 @@ pistol-magazine---35-sol-short-ap- =
     }
 }
 
-extended-pistol-magazine---35-sol-short-ap- =
+extended-pistol-magazine---threefive-sol-short-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15418,7 +15418,7 @@ extended-pistol-magazine---35-sol-short-ap- =
     }
 }
 
-pistol-magazine---35-sol-short-hp- =
+pistol-magazine---threefive-sol-short-hp- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15450,7 +15450,7 @@ pistol-magazine---35-sol-short-hp- =
     }
 }
 
-extended-pistol-magazine---35-sol-short-hp- =
+extended-pistol-magazine---threefive-sol-short-hp- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15482,7 +15482,7 @@ extended-pistol-magazine---35-sol-short-hp- =
     }
 }
 
-ammo-box---35-sol-short- =
+ammo-box---threefive-sol-short- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15514,7 +15514,7 @@ ammo-box---35-sol-short- =
     }
 }
 
-ammo-box---35-sol-short-rubber- =
+ammo-box---threefive-sol-short-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15546,7 +15546,7 @@ ammo-box---35-sol-short-rubber- =
     }
 }
 
-ammo-box---35-sol-short-ripper- =
+ammo-box---threefive-sol-short-ripper- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15578,7 +15578,7 @@ ammo-box---35-sol-short-ripper- =
     }
 }
 
-ammo-box---35-sol-short-armor-piercing- =
+ammo-box---threefive-sol-short-armor-piercing- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15610,7 +15610,7 @@ ammo-box---35-sol-short-armor-piercing- =
     }
 }
 
-ammo-box---40-sol-long- =
+ammo-box---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15642,7 +15642,7 @@ ammo-box---40-sol-long- =
     }
 }
 
-ammo-box---40-sol-long-resin-fragmentation- =
+ammo-box---fourzero-sol-long-resin-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15674,7 +15674,7 @@ ammo-box---40-sol-long-resin-fragmentation- =
     }
 }
 
-ammo-box---40-sol-long-armor-piercing- =
+ammo-box---fourzero-sol-long-armor-piercing- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15706,7 +15706,7 @@ ammo-box---40-sol-long-armor-piercing- =
     }
 }
 
-ammo-box---40-sol-long-incendiary- =
+ammo-box---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15738,7 +15738,7 @@ ammo-box---40-sol-long-incendiary- =
     }
 }
 
-rifle-short-magazine---40-sol-long- =
+rifle-short-magazine---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15770,7 +15770,7 @@ rifle-short-magazine---40-sol-long- =
     }
 }
 
-rifle-short-magazine---40-sol-long-incendiary- =
+rifle-short-magazine---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15802,7 +15802,7 @@ rifle-short-magazine---40-sol-long-incendiary- =
     }
 }
 
-rifle-short-magazine---40-sol-long-ap- =
+rifle-short-magazine---fourzero-sol-long-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15834,7 +15834,7 @@ rifle-short-magazine---40-sol-long-ap- =
     }
 }
 
-rifle-short-magazine---40-sol-long-rubber-fragmentation- =
+rifle-short-magazine---fourzero-sol-long-rubber-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15866,7 +15866,7 @@ rifle-short-magazine---40-sol-long-rubber-fragmentation- =
     }
 }
 
-rifle-magazine---40-sol-long- =
+rifle-magazine---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15898,7 +15898,7 @@ rifle-magazine---40-sol-long- =
     }
 }
 
-rifle-magazine---40-sol-long-incendiary- =
+rifle-magazine---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15930,7 +15930,7 @@ rifle-magazine---40-sol-long-incendiary- =
     }
 }
 
-rifle-magazine---40-sol-long-ap- =
+rifle-magazine---fourzero-sol-long-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15962,7 +15962,7 @@ rifle-magazine---40-sol-long-ap- =
     }
 }
 
-rifle-magazine---40-sol-long-rubber-fragmentation- =
+rifle-magazine---fourzero-sol-long-rubber-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -15994,7 +15994,7 @@ rifle-magazine---40-sol-long-rubber-fragmentation- =
     }
 }
 
-rifle-long-magazine---40-sol-long- =
+rifle-long-magazine---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16026,7 +16026,7 @@ rifle-long-magazine---40-sol-long- =
     }
 }
 
-rifle-long-magazine---40-sol-long-incendiary- =
+rifle-long-magazine---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16058,7 +16058,7 @@ rifle-long-magazine---40-sol-long-incendiary- =
     }
 }
 
-rifle-long-magazine---40-sol-long-ap- =
+rifle-long-magazine---fourzero-sol-long-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16090,7 +16090,7 @@ rifle-long-magazine---40-sol-long-ap- =
     }
 }
 
-rifle-long-magazine---40-sol-long-rubber-fragmentation- =
+rifle-long-magazine---fourzero-sol-long-rubber-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16122,7 +16122,7 @@ rifle-long-magazine---40-sol-long-rubber-fragmentation- =
     }
 }
 
-rifle-drum-magazine---40-sol-long- =
+rifle-drum-magazine---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16154,7 +16154,7 @@ rifle-drum-magazine---40-sol-long- =
     }
 }
 
-rifle-drum-magazine---40-sol-long-incendiary- =
+rifle-drum-magazine---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16186,7 +16186,7 @@ rifle-drum-magazine---40-sol-long-incendiary- =
     }
 }
 
-rifle-drum-magazine---40-sol-long-ap- =
+rifle-drum-magazine---fourzero-sol-long-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16218,7 +16218,7 @@ rifle-drum-magazine---40-sol-long-ap- =
     }
 }
 
-rifle-drum-magazine---40-sol-long-rubber-fragmentation- =
+rifle-drum-magazine---fourzero-sol-long-rubber-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16250,7 +16250,7 @@ rifle-drum-magazine---40-sol-long-rubber-fragmentation- =
     }
 }
 
-rifle-box-magazine---40-sol-long- =
+rifle-box-magazine---fourzero-sol-long- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16282,7 +16282,7 @@ rifle-box-magazine---40-sol-long- =
     }
 }
 
-rifle-box-magazine---40-sol-long-incendiary- =
+rifle-box-magazine---fourzero-sol-long-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16314,7 +16314,7 @@ rifle-box-magazine---40-sol-long-incendiary- =
     }
 }
 
-rifle-box-magazine---40-sol-long-ap- =
+rifle-box-magazine---fourzero-sol-long-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16346,7 +16346,7 @@ rifle-box-magazine---40-sol-long-ap- =
     }
 }
 
-rifle-box-magazine---40-sol-long-rubber-fragmentation- =
+rifle-box-magazine---fourzero-sol-long-rubber-fragmentation- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16378,7 +16378,7 @@ rifle-box-magazine---40-sol-long-rubber-fragmentation- =
     }
 }
 
-rifle-magazine--7-62x39mm- =
+rifle-magazine--seven-sixtwoxthreeninemm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16410,7 +16410,7 @@ rifle-magazine--7-62x39mm- =
     }
 }
 
-rifle-magazine--7-62x39mm-match- =
+rifle-magazine--seven-sixtwoxthreeninemm-match- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16442,7 +16442,7 @@ rifle-magazine--7-62x39mm-match- =
     }
 }
 
-rifle-magazine--7-62x39mm-incendiary- =
+rifle-magazine--seven-sixtwoxthreeninemm-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16474,7 +16474,7 @@ rifle-magazine--7-62x39mm-incendiary- =
     }
 }
 
-rifle-magazine--7-62x39mm-ap- =
+rifle-magazine--seven-sixtwoxthreeninemm-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16506,7 +16506,7 @@ rifle-magazine--7-62x39mm-ap- =
     }
 }
 
-rifle-magazine--7-62x39mm-emp- =
+rifle-magazine--seven-sixtwoxthreeninemm-emp- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16538,7 +16538,7 @@ rifle-magazine--7-62x39mm-emp- =
     }
 }
 
-rifle-magazine--7-62x39mm-rubber- =
+rifle-magazine--seven-sixtwoxthreeninemm-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16570,7 +16570,7 @@ rifle-magazine--7-62x39mm-rubber- =
     }
 }
 
-rifle-short-magazine--7-62x39mm- =
+rifle-short-magazine--seven-sixtwoxthreeninemm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16602,7 +16602,7 @@ rifle-short-magazine--7-62x39mm- =
     }
 }
 
-rifle-magazine--7-62x39mm-hunting- =
+rifle-magazine--seven-sixtwoxthreeninemm-hunting- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16634,7 +16634,7 @@ rifle-magazine--7-62x39mm-hunting- =
     }
 }
 
-ammo-box--7-62x39mm- =
+ammo-box--seven-sixtwoxthreeninemm- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16666,7 +16666,7 @@ ammo-box--7-62x39mm- =
     }
 }
 
-ammo-box--7-62x39mm-ricochet- =
+ammo-box--seven-sixtwoxthreeninemm-ricochet- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16698,7 +16698,7 @@ ammo-box--7-62x39mm-ricochet- =
     }
 }
 
-ammo-box--7-62x39mm-incendiary- =
+ammo-box--seven-sixtwoxthreeninemm-incendiary- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16730,7 +16730,7 @@ ammo-box--7-62x39mm-incendiary- =
     }
 }
 
-ammo-box--7-62x39mm-armor-piercing- =
+ammo-box--seven-sixtwoxthreeninemm-armor-piercing- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16762,7 +16762,7 @@ ammo-box--7-62x39mm-armor-piercing- =
     }
 }
 
-ammo-box--7-62x39mm-ion- =
+ammo-box--seven-sixtwoxthreeninemm-ion- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16794,7 +16794,7 @@ ammo-box--7-62x39mm-ion- =
     }
 }
 
-ammo-box--7-62x39mm-civilian- =
+ammo-box--seven-sixtwoxthreeninemm-civilian- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16826,7 +16826,7 @@ ammo-box--7-62x39mm-civilian- =
     }
 }
 
-ammo-box--7-62x39mm-rubber- =
+ammo-box--seven-sixtwoxthreeninemm-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16858,7 +16858,7 @@ ammo-box--7-62x39mm-rubber- =
     }
 }
 
-ammo-box--7-62x39mm-hunting- =
+ammo-box--seven-sixtwoxthreeninemm-hunting- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16890,7 +16890,7 @@ ammo-box--7-62x39mm-hunting- =
     }
 }
 
-ammo-box--7-62x39mm-blank- =
+ammo-box--seven-sixtwoxthreeninemm-blank- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16922,7 +16922,7 @@ ammo-box--7-62x39mm-blank- =
     }
 }
 
-pistol-magazine--9x25mm-nt- =
+pistol-magazine--ninextwofivemm-nt- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16954,7 +16954,7 @@ pistol-magazine--9x25mm-nt- =
     }
 }
 
-extended-pistol-magazine--9x25mm-nt- =
+extended-pistol-magazine--ninextwofivemm-nt- =
 { $case ->
   *[nominative]
     { $number ->
@@ -16986,7 +16986,7 @@ extended-pistol-magazine--9x25mm-nt- =
     }
 }
 
-pistol-magazine--9x25mm-nt-rubber- =
+pistol-magazine--ninextwofivemm-nt-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17018,7 +17018,7 @@ pistol-magazine--9x25mm-nt-rubber- =
     }
 }
 
-extended-pistol-magazine--9x25mm-nt-rubber- =
+extended-pistol-magazine--ninextwofivemm-nt-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17050,7 +17050,7 @@ extended-pistol-magazine--9x25mm-nt-rubber- =
     }
 }
 
-pistol-magazine--9x25mm-nt-ap- =
+pistol-magazine--ninextwofivemm-nt-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17082,7 +17082,7 @@ pistol-magazine--9x25mm-nt-ap- =
     }
 }
 
-extended-pistol-magazine--9x25mm-nt-ap- =
+extended-pistol-magazine--ninextwofivemm-nt-ap- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17114,7 +17114,7 @@ extended-pistol-magazine--9x25mm-nt-ap- =
     }
 }
 
-pistol-magazine--9x25mm-nt-hp- =
+pistol-magazine--ninextwofivemm-nt-hp- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17146,7 +17146,7 @@ pistol-magazine--9x25mm-nt-hp- =
     }
 }
 
-extended-pistol-magazine--9x25mm-nt-hp- =
+extended-pistol-magazine--ninextwofivemm-nt-hp- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17178,7 +17178,7 @@ extended-pistol-magazine--9x25mm-nt-hp- =
     }
 }
 
-ammo-box--9x25mm-nt- =
+ammo-box--ninextwofivemm-nt- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17210,7 +17210,7 @@ ammo-box--9x25mm-nt- =
     }
 }
 
-ammo-box--9x25mm-nt-rubber- =
+ammo-box--ninextwofivemm-nt-rubber- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17242,7 +17242,7 @@ ammo-box--9x25mm-nt-rubber- =
     }
 }
 
-ammo-box--9x25mm-nt-hollow-point- =
+ammo-box--ninextwofivemm-nt-hollow-point- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17274,7 +17274,7 @@ ammo-box--9x25mm-nt-hollow-point- =
     }
 }
 
-ammo-box--9x25mm-nt-armor-piercing- =
+ammo-box--ninextwofivemm-nt-armor-piercing- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17306,7 +17306,7 @@ ammo-box--9x25mm-nt-armor-piercing- =
     }
 }
 
-pistol-magazine---456-magnum- =
+pistol-magazine---fourfivesix-magnum- =
 { $case ->
   *[nominative]
     { $number ->
@@ -17338,7 +17338,7 @@ pistol-magazine---456-magnum- =
     }
 }
 
-fish-porter-3000 =
+fish-porter-threezerozerozero =
 { $case ->
   *[nominative]
     { $number ->
@@ -20458,7 +20458,7 @@ solzara-brewing-company-mushi-kombucha =
     }
 }
 
-24-volt-energy =
+twofour-volt-energy =
 { $case ->
   *[nominative]
     { $number ->
@@ -24350,38 +24350,6 @@ chef-s-red-hat =
     }
 }
 
-------------- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] красный фартук
-    }
-  [genitive]
-    { $number ->
-      *[one] красного фартука
-    }
-  [dative]
-    { $number ->
-      *[one] красному фартуку
-    }
-  [accusative]
-    { $number ->
-      *[one] красный фартук
-    }
-  [instrumental]
-    { $number ->
-      *[one] красным фартуком
-    }
-  [prepositional]
-    { $number ->
-      *[one] красном фартуке
-    }
-  [gender]
-    { $number ->
-      *[one] male
-    }
-}
-
 ladle =
 { $case ->
   *[nominative]
@@ -24606,7 +24574,7 @@ salt-shaker =
     }
 }
 
-cooking-desserts-101 =
+cooking-desserts-onezeroone =
 { $case ->
   *[nominative]
     { $number ->
@@ -24670,7 +24638,7 @@ metal-rolling-pin =
     }
 }
 
-k1ss-skillchip =
+koness-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -26238,7 +26206,7 @@ boritos-cornchips =
     }
 }
 
-4no-raisins =
+fourno-raisins =
 { $case ->
   *[nominative]
     { $number ->
@@ -28382,7 +28350,7 @@ bottle-of-e-z-nutrient =
     }
 }
 
-bottle-of-left-4-zed =
+bottle-of-left-four-zed =
 { $case ->
   *[nominative]
     { $number ->
@@ -33070,7 +33038,7 @@ organ-harvester =
     }
 }
 
-pand-e-m-i-c-2200 =
+pand-e-m-i-c-twotwozerozero =
 { $case ->
   *[nominative]
     { $number ->
@@ -33146,7 +33114,7 @@ cryo-cell =
     }
 }
 
-chemmaster-3000 =
+chemmaster-threezerozerozero =
 { $case ->
   *[nominative]
     { $number ->
@@ -49038,7 +49006,7 @@ justice-armor =
     }
 }
 
-lbx-ac-10---scattershot-- =
+lbx-ac-onezero---scattershot-- =
 { $case ->
   *[nominative]
     { $number ->
@@ -49102,7 +49070,7 @@ scattershot-ammo-box =
     }
 }
 
-fnx-99---hades---carbine =
+fnx-ninenine---hades---carbine =
 { $case ->
   *[nominative]
     { $number ->
@@ -49326,7 +49294,7 @@ ch-ds---peacemaker---disabler =
     }
 }
 
-sgl-6-grenade-launcher =
+sgl-six-grenade-launcher =
 { $case ->
   *[nominative]
     { $number ->
@@ -49390,7 +49358,7 @@ launchable-flashbangs =
     }
 }
 
-sob-3-grenade-launcher =
+sob-three-grenade-launcher =
 { $case ->
   *[nominative]
     { $number ->
@@ -49486,7 +49454,7 @@ precision-explosive-missiles =
     }
 }
 
-pep-6-missile-rack =
+pep-six-missile-rack =
 { $case ->
   *[nominative]
     { $number ->
@@ -49566,7 +49534,7 @@ diamond-tipped-exosuit-drill =
     }
 }
 
-217-d-heavy-plasma-cutter =
+twooneseven-d-heavy-plasma-cutter =
 { $case ->
   *[nominative]
     { $number ->
@@ -49582,7 +49550,7 @@ exosuit-proto-kinetic-accelerator =
     }
 }
 
-ultra-ac-2 =
+ultra-ac-two =
 { $case ->
   *[nominative]
     { $number ->
@@ -49822,7 +49790,7 @@ banana-mortar =
     }
 }
 
-honker-blast-5000 =
+honker-blast-fivezerozerozero =
 { $case ->
   *[nominative]
     { $number ->
@@ -52546,7 +52514,7 @@ asimov--core-ai-module =
     }
 }
 
-p-a-l-a-d-i-n--version-3-5e--core-ai-module =
+p-a-l-a-d-i-n--version-three-fivee--core-ai-module =
 { $case ->
   *[nominative]
     { $number ->
@@ -52770,7 +52738,7 @@ y-e-s-m-a-n---core-ai-module =
     }
 }
 
--rewsimov----core-ai-module =
+rewsimov----core-ai-module =
 { $case ->
   *[nominative]
     { $number ->
@@ -52834,7 +52802,7 @@ nt-default--core-ai-module =
     }
 }
 
--rewsimov--core-ai-module =
+rewsimov--core-ai-module =
 { $case ->
   *[nominative]
     { $number ->
@@ -52994,7 +52962,7 @@ nutimov--core-ai-module =
     }
 }
 
-10-commandments--core-ai-module =
+onezero-commandments--core-ai-module =
 { $case ->
   *[nominative]
     { $number ->
@@ -53090,7 +53058,7 @@ robodoctor--core-ai-module =
     }
 }
 
-p-a-l-a-d-i-n--version-5e--core-ai-module =
+p-a-l-a-d-i-n--version-fivee--core-ai-module =
 { $case ->
   *[nominative]
     { $number ->
@@ -60946,7 +60914,7 @@ welding-helmet =
     }
 }
 
-cable--x5- =
+cable--xfive- =
 { $case ->
   *[nominative]
     { $number ->
@@ -74634,38 +74602,6 @@ military-jacket =
     }
 }
 
------------- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] накладные усы
-    }
-  [genitive]
-    { $number ->
-      *[one] накладных усов
-    }
-  [dative]
-    { $number ->
-      *[one] накладным усам
-    }
-  [accusative]
-    { $number ->
-      *[one] накладные усы
-    }
-  [instrumental]
-    { $number ->
-      *[one] накладными усами
-    }
-  [prepositional]
-    { $number ->
-      *[one] накладных усах
-    }
-  [gender]
-    { $number ->
-      *[one] plural
-    }
-}
-
 cyborg-visor =
 { $case ->
   *[nominative]
@@ -75242,7 +75178,7 @@ ducky-shoes =
     }
 }
 
-old-copy-of---space-station-13--the-musical-- =
+old-copy-of---space-station-onethree--the-musical-- =
 { $case ->
   *[nominative]
     { $number ->
@@ -75274,7 +75210,7 @@ old-copy-of---space-station-13--the-musical-- =
     }
 }
 
-tape-wizard---episode-23 =
+tape-wizard---episode-twothree =
 { $case ->
   *[nominative]
     { $number ->
@@ -80694,7 +80630,7 @@ paint-palette =
     }
 }
 
-canvas--19x19- =
+canvas--oneninexonenine- =
 { $case ->
   *[nominative]
     { $number ->
@@ -80726,7 +80662,7 @@ canvas--19x19- =
     }
 }
 
-canvas--23x19- =
+canvas--twothreexonenine- =
 { $case ->
   *[nominative]
     { $number ->
@@ -80758,7 +80694,7 @@ canvas--23x19- =
     }
 }
 
-canvas--23x23- =
+canvas--twothreextwothree- =
 { $case ->
   *[nominative]
     { $number ->
@@ -80790,7 +80726,7 @@ canvas--23x23- =
     }
 }
 
-canvas--24x24---ai-universal-standard- =
+canvas--twofourxtwofour---ai-universal-standard- =
 { $case ->
   *[nominative]
     { $number ->
@@ -80822,7 +80758,7 @@ canvas--24x24---ai-universal-standard- =
     }
 }
 
-canvas--36x24- =
+canvas--threesixxtwofour- =
 { $case ->
   *[nominative]
     { $number ->
@@ -80854,7 +80790,7 @@ canvas--36x24- =
     }
 }
 
-canvas--45x27- =
+canvas--fourfivextwoseven- =
 { $case ->
   *[nominative]
     { $number ->
@@ -81238,7 +81174,7 @@ genuine-id-appraisal-now--skillchip =
     }
 }
 
-basketsoft-3000-skillchip =
+basketsoft-threezerozerozero-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -81270,7 +81206,7 @@ basketsoft-3000-skillchip =
     }
 }
 
-hedge-3-skillchip =
+hedge-three-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -81334,7 +81270,7 @@ integrated-intuitive-thinking-and-judging-skillchip =
     }
 }
 
-n16h7m4r3-skillchip =
+nonesixhsevenmfourrthree-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -81398,7 +81334,7 @@ mast-angl-er-skillchip =
     }
 }
 
-le-s48r4g3-skillchip =
+le-sfoureightrfourgthree-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -81558,7 +81494,7 @@ trading-card-pack--resin-frontier-booster-pack =
     }
 }
 
-trading-card-pack--series-1 =
+trading-card-pack--series-one =
 { $case ->
   *[nominative]
     { $number ->
@@ -81878,7 +81814,7 @@ russian-revolver =
     }
 }
 
-old-f058ur7-skillchip =
+old-fzerofiveeighturseven-skillchip =
 { $case ->
   *[nominative]
     { $number ->
@@ -84283,230 +84219,6 @@ construction-node =
   [prepositional]
     { $number ->
       *[one] конструкционном узле
-    }
-}
-
--- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] ваш
-    }
-  [genitive]
-    { $number ->
-      *[one] вашего
-    }
-  [dative]
-    { $number ->
-      *[one] вашему
-    }
-  [accusative]
-    { $number ->
-      *[one] ваш
-    }
-  [instrumental]
-    { $number ->
-      *[one] вашим
-    }
-  [prepositional]
-    { $number ->
-      *[one] вашем
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] ваша
-    }
-  [genitive]
-    { $number ->
-      *[one] вашей
-    }
-  [dative]
-    { $number ->
-      *[one] вашей
-    }
-  [accusative]
-    { $number ->
-      *[one] вашу
-    }
-  [instrumental]
-    { $number ->
-      *[one] вашей
-    }
-  [prepositional]
-    { $number ->
-      *[one] вашей
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] ваше
-    }
-  [genitive]
-    { $number ->
-      *[one] вашего
-    }
-  [dative]
-    { $number ->
-      *[one] вашему
-    }
-  [accusative]
-    { $number ->
-      *[one] ваше
-    }
-  [instrumental]
-    { $number ->
-      *[one] вашим
-    }
-  [prepositional]
-    { $number ->
-      *[one] вашем
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] ваши
-    }
-  [genitive]
-    { $number ->
-      *[one] ваших
-    }
-  [dative]
-    { $number ->
-      *[one] вашим
-    }
-  [accusative]
-    { $number ->
-      *[one] ваши
-    }
-  [instrumental]
-    { $number ->
-      *[one] вашими
-    }
-  [prepositional]
-    { $number ->
-      *[one] ваших
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] свой
-    }
-  [genitive]
-    { $number ->
-      *[one] своего
-    }
-  [dative]
-    { $number ->
-      *[one] своему
-    }
-  [accusative]
-    { $number ->
-      *[one] свой
-    }
-  [instrumental]
-    { $number ->
-      *[one] своим
-    }
-  [prepositional]
-    { $number ->
-      *[one] своём
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] своя
-    }
-  [genitive]
-    { $number ->
-      *[one] своей
-    }
-  [dative]
-    { $number ->
-      *[one] своей
-    }
-  [accusative]
-    { $number ->
-      *[one] свою
-    }
-  [instrumental]
-    { $number ->
-      *[one] своей
-    }
-  [prepositional]
-    { $number ->
-      *[one] своей
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] своё
-    }
-  [genitive]
-    { $number ->
-      *[one] своего
-    }
-  [dative]
-    { $number ->
-      *[one] своему
-    }
-  [accusative]
-    { $number ->
-      *[one] своё
-    }
-  [instrumental]
-    { $number ->
-      *[one] своим
-    }
-  [prepositional]
-    { $number ->
-      *[one] своём
-    }
-}
-
---- =
-{ $case ->
-  *[nominative]
-    { $number ->
-      *[one] свои
-    }
-  [genitive]
-    { $number ->
-      *[one] своих
-    }
-  [dative]
-    { $number ->
-      *[one] своим
-    }
-  [accusative]
-    { $number ->
-      *[one] свои
-    }
-  [instrumental]
-    { $number ->
-      *[one] своими
-    }
-  [prepositional]
-    { $number ->
-      *[one] своих
     }
 }
 
@@ -94558,7 +94270,7 @@ dormitories =
     }
 }
 
-dorms-room-1 =
+dorms-room-one =
 { $case ->
   *[nominative]
     { $number ->
@@ -94590,7 +94302,7 @@ dorms-room-1 =
     }
 }
 
-dorms-room-2 =
+dorms-room-two =
 { $case ->
   *[nominative]
     { $number ->
@@ -94622,7 +94334,7 @@ dorms-room-2 =
     }
 }
 
-dorms-room-3 =
+dorms-room-three =
 { $case ->
   *[nominative]
     { $number ->
@@ -94654,7 +94366,7 @@ dorms-room-3 =
     }
 }
 
-dorms-room-4 =
+dorms-room-four =
 { $case ->
   *[nominative]
     { $number ->
@@ -94686,7 +94398,7 @@ dorms-room-4 =
     }
 }
 
-dorms-apartment-1 =
+dorms-apartment-one =
 { $case ->
   *[nominative]
     { $number ->
@@ -94718,7 +94430,7 @@ dorms-apartment-1 =
     }
 }
 
-dorms-apartment-2 =
+dorms-apartment-two =
 { $case ->
   *[nominative]
     { $number ->
@@ -96318,7 +96030,7 @@ sledgehammer =
     }
 }
 
-d-4-tactical-breaching-hammer =
+d-four-tactical-breaching-hammer =
 { $case ->
   *[nominative]
     { $number ->
@@ -96350,7 +96062,7 @@ d-4-tactical-breaching-hammer =
     }
 }
 
-d-6-tactical-breaching-hammer =
+d-six-tactical-breaching-hammer =
 { $case ->
   *[nominative]
     { $number ->
