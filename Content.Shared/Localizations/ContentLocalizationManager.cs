@@ -66,13 +66,19 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureRu, "DECLENT_ACCUSATIVE", FuncDeclentAccusative);
             _loc.AddFunction(cultureRu, "DECLENT_INSTRUMENTAL", FuncDeclentInstrumental);
             _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL", FuncDeclentPrepositional);
+            _loc.AddFunction(cultureRu, "DECLENT_NOMINATIVE_CAPITALIZE", FuncDeclentNominativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLENT_GENITIVE_CAPITALIZE", FuncDeclentGenitiveCapitalize);
+            _loc.AddFunction(cultureRu, "DECLENT_DATIVE_CAPITALIZE", FuncDeclentDativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLENT_ACCUSATIVE_CAPITALIZE", FuncDeclentAccusativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLENT_INSTRUMENTAL_CAPITALIZE", FuncDeclentInstrumentalCapitalize);
+            _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL_CAPITALIZE", FuncDeclentPrepositionalCapitalize);
         }
 
-        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative", int amount = 1)
+        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative", bool capitalize = false, int amount = 1)
         {
             if (args.Args.Count < 1)
             {
-                return args.Args[0];
+                return capitalize ? CapitalizeDeclent(args.Args[0]) : args.Args[0];
             }
 
             ILocValue entity0 = args.Args[0];
@@ -99,11 +105,19 @@ namespace Content.Shared.Localizations
                 var loc = new LocValueString(Loc.GetString(entityName, ("case", declent), ("number", number)));
                 if (loc.Value.Contains(entityName))
                 {
-                    return args.Args[0];
+                    return capitalize ? CapitalizeDeclent(args.Args[0]) : args.Args[0];
                 }
-                return loc;
+                return capitalize ? CapitalizeDeclent(loc) : loc;
             }
-            return args.Args[0];
+            return capitalize ? CapitalizeDeclent(args.Args[0]) : args.Args[0];
+        }
+
+        private ILocValue CapitalizeDeclent(ILocValue toCapitalize)
+        {
+            var input = toCapitalize.Format(new LocContext());
+            if (!String.IsNullOrEmpty(input))
+                return new LocValueString(input[0].ToString().ToUpper() + input.Substring(1));
+            else return new LocValueString("");
         }
 
         private ILocValue FuncDeclentNominative(LocArgs args)
@@ -134,6 +148,36 @@ namespace Content.Shared.Localizations
         private ILocValue FuncDeclentPrepositional(LocArgs args)
         {
             return DeclentHelper(args, "prepositional");
+        }
+
+        private ILocValue FuncDeclentNominativeCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "nominative", true);
+        }
+
+        private ILocValue FuncDeclentGenitiveCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "genitive", true);
+        }
+
+        private ILocValue FuncDeclentDativeCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "dative", true);
+        }
+
+        private ILocValue FuncDeclentAccusativeCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "accusative", true);
+        }
+
+        private ILocValue FuncDeclentInstrumentalCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "instrumental", true);
+        }
+
+        private ILocValue FuncDeclentPrepositionalCapitalize(LocArgs args)
+        {
+            return DeclentHelper(args, "prepositional", true);
         }
 
         private ILocValue FormatMany(LocArgs args)
