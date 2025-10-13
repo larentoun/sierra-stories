@@ -61,21 +61,21 @@ namespace Content.Shared.Localizations
 
             // RU DECLENT
             var cultureRu = new CultureInfo("ru-RU");
-            _loc.AddFunction(cultureRu, "DECLENT_NOMINATIVE", FuncDeclentNominative);
-            _loc.AddFunction(cultureRu, "DECLENT_GENITIVE", FuncDeclentGenitive);
-            _loc.AddFunction(cultureRu, "DECLENT_DATIVE", FuncDeclentDative);
-            _loc.AddFunction(cultureRu, "DECLENT_ACCUSATIVE", FuncDeclentAccusative);
-            _loc.AddFunction(cultureRu, "DECLENT_INSTRUMENTAL", FuncDeclentInstrumental);
-            _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL", FuncDeclentPrepositional);
-            _loc.AddFunction(cultureRu, "DECLENT_NOMINATIVE_CAPITALIZE", FuncDeclentNominativeCapitalize);
-            _loc.AddFunction(cultureRu, "DECLENT_GENITIVE_CAPITALIZE", FuncDeclentGenitiveCapitalize);
-            _loc.AddFunction(cultureRu, "DECLENT_DATIVE_CAPITALIZE", FuncDeclentDativeCapitalize);
-            _loc.AddFunction(cultureRu, "DECLENT_ACCUSATIVE_CAPITALIZE", FuncDeclentAccusativeCapitalize);
-            _loc.AddFunction(cultureRu, "DECLENT_INSTRUMENTAL_CAPITALIZE", FuncDeclentInstrumentalCapitalize);
-            _loc.AddFunction(cultureRu, "DECLENT_PREPOSITIONAL_CAPITALIZE", FuncDeclentPrepositionalCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_NOMINATIVE", FuncDeclineNominative);
+            _loc.AddFunction(cultureRu, "DECLINE_GENITIVE", FuncDeclineGenitive);
+            _loc.AddFunction(cultureRu, "DECLINE_DATIVE", FuncDeclineDative);
+            _loc.AddFunction(cultureRu, "DECLINE_ACCUSATIVE", FuncDeclineAccusative);
+            _loc.AddFunction(cultureRu, "DECLINE_INSTRUMENTAL", FuncDeclineInstrumental);
+            _loc.AddFunction(cultureRu, "DECLINE_PREPOSITIONAL", FuncDeclinePrepositional);
+            _loc.AddFunction(cultureRu, "DECLINE_NOMINATIVE_CAPITALIZE", FuncDeclineNominativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_GENITIVE_CAPITALIZE", FuncDeclineGenitiveCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_DATIVE_CAPITALIZE", FuncDeclineDativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_ACCUSATIVE_CAPITALIZE", FuncDeclineAccusativeCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_INSTRUMENTAL_CAPITALIZE", FuncDeclineInstrumentalCapitalize);
+            _loc.AddFunction(cultureRu, "DECLINE_PREPOSITIONAL_CAPITALIZE", FuncDeclinePrepositionalCapitalize);
         }
 
-        private ILocValue DeclentHelper(LocArgs args, string declent = "nominative", bool capitalize = false, int amount = 1)
+        private ILocValue DeclensionHelper(LocArgs args, string target_case = "nominative", bool capitalize = false, int amount = 1)
         {
             if (args.Args.Count < 1)
             {
@@ -103,7 +103,7 @@ namespace Content.Shared.Localizations
                 // many - 0, 5-20, 25-30, other...
                     "many";
 
-                var loc = new LocValueString(Loc.GetString(entityName, ("case", declent), ("number", number)));
+                var loc = new LocValueString(Loc.GetString(entityName, ("case", target_case), ("number", number)));
                 if (loc.Value.Contains(entityName))
                 {
                     return capitalize ? CapitalizeDeclent(args.Args[0]) : args.Args[0];
@@ -165,64 +165,64 @@ namespace Content.Shared.Localizations
             return result.ToString();
         }
 
-        private ILocValue FuncDeclentNominative(LocArgs args)
+        private ILocValue FuncDeclineNominative(LocArgs args)
         {
-            return DeclentHelper(args, "nominative");
+            return DeclensionHelper(args, "nominative");
         }
 
-        private ILocValue FuncDeclentGenitive(LocArgs args)
+        private ILocValue FuncDeclineGenitive(LocArgs args)
         {
-            return DeclentHelper(args, "genitive");
+            return DeclensionHelper(args, "genitive");
         }
 
-        private ILocValue FuncDeclentDative(LocArgs args)
+        private ILocValue FuncDeclineDative(LocArgs args)
         {
-            return DeclentHelper(args, "dative");
+            return DeclensionHelper(args, "dative");
         }
 
-        private ILocValue FuncDeclentAccusative(LocArgs args)
+        private ILocValue FuncDeclineAccusative(LocArgs args)
         {
-            return DeclentHelper(args, "accusative");
+            return DeclensionHelper(args, "accusative");
         }
 
-        private ILocValue FuncDeclentInstrumental(LocArgs args)
+        private ILocValue FuncDeclineInstrumental(LocArgs args)
         {
-            return DeclentHelper(args, "instrumental");
+            return DeclensionHelper(args, "instrumental");
         }
 
-        private ILocValue FuncDeclentPrepositional(LocArgs args)
+        private ILocValue FuncDeclinePrepositional(LocArgs args)
         {
-            return DeclentHelper(args, "prepositional");
+            return DeclensionHelper(args, "prepositional");
         }
 
-        private ILocValue FuncDeclentNominativeCapitalize(LocArgs args)
+        private ILocValue FuncDeclineNominativeCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "nominative", true);
+            return DeclensionHelper(args, "nominative", true);
         }
 
-        private ILocValue FuncDeclentGenitiveCapitalize(LocArgs args)
+        private ILocValue FuncDeclineGenitiveCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "genitive", true);
+            return DeclensionHelper(args, "genitive", true);
         }
 
-        private ILocValue FuncDeclentDativeCapitalize(LocArgs args)
+        private ILocValue FuncDeclineDativeCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "dative", true);
+            return DeclensionHelper(args, "dative", true);
         }
 
-        private ILocValue FuncDeclentAccusativeCapitalize(LocArgs args)
+        private ILocValue FuncDeclineAccusativeCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "accusative", true);
+            return DeclensionHelper(args, "accusative", true);
         }
 
-        private ILocValue FuncDeclentInstrumentalCapitalize(LocArgs args)
+        private ILocValue FuncDeclineInstrumentalCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "instrumental", true);
+            return DeclensionHelper(args, "instrumental", true);
         }
 
-        private ILocValue FuncDeclentPrepositionalCapitalize(LocArgs args)
+        private ILocValue FuncDeclinePrepositionalCapitalize(LocArgs args)
         {
-            return DeclentHelper(args, "prepositional", true);
+            return DeclensionHelper(args, "prepositional", true);
         }
 
         private ILocValue FormatMany(LocArgs args)
